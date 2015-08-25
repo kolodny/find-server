@@ -1,0 +1,26 @@
+{
+  "name": "find-server",
+  "version": "1.0.0",
+  "description": "find which port the server started on",
+  "main": "index.js",
+  "bin": {
+    "find-server": "./find-server"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Moshe Kolodny",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.61.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kolodny/find-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kolodny/find-server/issues"
+  },
+  "homepage": "https://github.com/kolodny/find-server#readme"
+}

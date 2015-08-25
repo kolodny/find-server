@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+
+var findServer = require('./');
+
+var host = process.argv[2];
+var startingPort = process.argv[3];
+var endingPort = process.argv[4] || +startingPort + 1000;
+
+if (host.indexOf('://') === -1) {
+  host = 'http://' + host;
+}
+
+findServer(host, startingPort, endingPort, function(err, port) {
+  if (err) {
+    console.error(err.message);
+    process.exit(1);
+  } else {
+    console.log(port);
+  }
+});
