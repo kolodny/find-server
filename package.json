@@ -1,6 +1,6 @@
 {
   "name": "find-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "find which port the server started on",
   "main": "index.js",
   "bin": {

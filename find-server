@@ -12,7 +12,6 @@ if (host.indexOf('://') === -1) {
 
 findServer(host, startingPort, endingPort, function(err, port) {
   if (err) {
-    console.error(err.message);
     process.exit(1);
   } else {
     console.log(port);
